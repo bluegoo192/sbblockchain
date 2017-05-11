@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/bluegoo192/sbblockchain/issues"
   },
-  "homepage": "https://github.com/bluegoo192/sbblockchain#readme"
+  "homepage": "https://github.com/bluegoo192/sbblockchain#readme",
+  "devDependencies": {
+    "babel-register": "^6.24.1"
+  },
+  "dependencies": {
+    "koa": "^2.2.0"
+  }
 }
