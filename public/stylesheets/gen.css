@@ -1,3 +1,8 @@
 body {
   color: #2a2f30;
+  margin: 0;
+}
+.center {
+  display: table;
+  margin: auto;
 }
