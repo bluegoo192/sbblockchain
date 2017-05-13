@@ -3,9 +3,13 @@ nav
   display: flex
   justify-content: space-between
   align-items: stretch;
+  background-color: #ccc
 
   #hamburger
     display: none
+
+  a
+    padding: 16px 0px
 
   ul
     display: flex
@@ -17,7 +21,11 @@ nav
 
       a
         display: block
-        text-align: center;
+        text-align: center
+
+  #centerhelper
+    display: none
+    visibility: hidden;
 
 @media (max-width: 34em)
   nav
@@ -27,3 +35,6 @@ nav
     #hamburger
       display: block
       border: 1px solid #000
+
+    #centerhelper
+      display: block;

@@ -3,9 +3,13 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  background-color: #ccc;
 }
 nav #hamburger {
   display: none;
+}
+nav a {
+  padding: 16px 0px;
 }
 nav ul {
   display: flex;
@@ -19,6 +23,10 @@ nav ul li a {
   display: block;
   text-align: center;
 }
+nav #centerhelper {
+  display: none;
+  visibility: hidden;
+}
 @media (max-width: 34em) {
   nav ul {
     display: none;
@@ -26,5 +34,8 @@ nav ul li a {
   nav #hamburger {
     display: block;
     border: 1px solid #000;
+  }
+  nav #centerhelper {
+    display: block;
   }
 }
