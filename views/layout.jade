@@ -5,6 +5,7 @@ html
     link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet") 
     link(rel='stylesheet', href='/stylesheets/gen.css')
     link(rel='stylesheet', href='/stylesheets/nav.css')
+    block styles
   body
     nav
       #hamburger
@@ -12,7 +13,7 @@ html
       a#centerhelper a
       .logo.vcentercontainer
         h1 Blockchain at UCSB
-      ul.horizontal
+      ul.horizontal.responsivemenu
         li
           a(href="#") One
         li

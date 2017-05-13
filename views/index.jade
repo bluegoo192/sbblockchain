@@ -1,8 +1,11 @@
 extends layout
 
+block styles
+  link(rel='stylesheet', href='/stylesheets/home.css')
+
 block content
-  #hero
-    h1 Blockchain at UCSB
+  #hero.vcentercontainer
+    h1.center Blockchain at UCSB
   .maincontainer
     .stack.center
       h2 Distributed everything
