@@ -1,8 +1,28 @@
 body {
   color: #2a2f30;
   margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+}
+ul li {
+  list-style: none;
 }
 .center {
   display: table;
   margin: auto;
+}
+.vcentercontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.horizontal {
+  flex-direction: row;
 }
