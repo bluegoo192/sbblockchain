@@ -1,12 +1,16 @@
 nav {
   width: 100%;
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: stretch;
   background-color: #ccc;
 }
 nav #hamburger {
   display: none;
+}
+nav .logo {
+  margin: 0px 16px;
 }
 nav a {
   padding: 16px 0px;
@@ -44,5 +48,6 @@ nav #centerhelper {
     position: fixed;
     left: 0;
     top: 0;
+    min-width: 0;
   }
 }
