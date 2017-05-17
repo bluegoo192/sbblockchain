@@ -1,14 +1,11 @@
 extends layout
 
-block styles
-  link(rel='stylesheet', href='/stylesheets/home.css')
-
 block content
   #hero.vcentercontainer
     h1.center Distributed everything
   .maincontainer
     .stack.center
-      h2.center Distributed everything
+      h2.center {{ message }}
       p We empower students to develop distributed systems through education, projects, and industry connections.
     .flexcontainer.horizontal
       .stack
@@ -19,3 +16,9 @@ block content
         p Education: We learn everything we can about block chaining, and pass on that knowledge to new members
         p Consulting: We help companies use blockchain to empower their business
         p Projects: We work together to design and build blockchain systems
+
+block scripts
+  script(src="/javascripts/index.js")
+
+block styles
+  link(rel='stylesheet', href='/stylesheets/home.css')
