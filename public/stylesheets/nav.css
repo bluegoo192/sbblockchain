@@ -32,22 +32,35 @@ nav #centerhelper {
   display: none;
   visibility: hidden;
 }
-@media (max-width: 34em) {
-  nav ul {
-    visibility: hidden;
-  }
+nav #mobilehamburger {
+  display: none;
+}
+@media (max-width: 40em) {
   nav #hamburger {
     display: block;
     border: 1px solid #000;
+  }
+  nav #mobilehamburger {
+    display: block;
   }
   nav #centerhelper {
     display: block;
   }
   nav ul.responsivemenu {
-    flex-direction: column;
+    visibility: hidden;
+    display: block;
     position: fixed;
     left: 0;
     top: 0;
     min-width: 0;
+    background-color: #ccc;
+    color: #fff;
+    height: 100vh;
+  }
+  nav ul.responsivemenu li a {
+    padding: 8px 8px;
+  }
+  nav ul.visible {
+    visibility: visible;
   }
 }

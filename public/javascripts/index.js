@@ -1,6 +1,13 @@
 var app = new Vue({
   el: '#app',
   data: {
-    message: 'Hello Vue!'
+    show: {
+      mobilenav: false
+    }
+  },
+  methods: {
+    test: function () {
+      console.log('hi');
+    }
   }
 })

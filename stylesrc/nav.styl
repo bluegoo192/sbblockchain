@@ -32,21 +32,35 @@ nav
     display: none
     visibility: hidden;
 
-@media (max-width: 34em)
+  #mobilehamburger
+    display: none
+
+@media (max-width: 40em)
   nav
-    ul
-      visibility: hidden;
 
     #hamburger
       display: block
       border: 1px solid #000
 
+    #mobilehamburger
+      display: block;
+
     #centerhelper
       display: block;
 
     ul.responsivemenu
-      flex-direction: column;
+      visibility: hidden;
+      display: block;
       position: fixed;
       left: 0;
       top: 0;
       min-width: 0
+      background-color: #ccc;
+      color: #fff;
+      height: 100vh;
+
+      li a
+        padding: 8px 8px
+
+    ul.visible
+      visibility: visible;

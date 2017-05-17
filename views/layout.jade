@@ -7,24 +7,28 @@ html
     link(rel='stylesheet', href='/stylesheets/nav.css')
     block styles
   body
-    nav
-      #hamburger
-        a(href="#") &#9776;
-      a#centerhelper a
-      .logo.vcentercontainer
-        h1 Blockchain at UCSB
-      ul.horizontal.responsivemenu
-        li
-          a(href="#") About
-        li
-          a(href="#") Education
-        li
-          a(href="#") Events
-        li
-          a(href="#") R&D
-        li
-          a(href="#") Contact
     #app
+      nav
+        #hamburger(@click="show.mobilenav=!show.mobilenav")
+          a(href="#") &#9776;
+        a#centerhelper a
+        .logo.vcentercontainer
+          h1 Blockchain at UCSB
+        ul.horizontal.responsivemenu(:class="{ visible: show.mobilenav }")
+          li#mobilehamburger
+            #hamburger(@click="show.mobilenav=!show.mobilenav")
+              a(href="#") &#9776;
+          li
+            a(href="#") About
+          li
+            a(href="#") Education
+          li
+            a(href="#") Events
+          li
+            a(href="#") R&D
+          li
+            a(href="#") Contact
+      
       block content
     script(src="https://unpkg.com/vue")
     block scripts
