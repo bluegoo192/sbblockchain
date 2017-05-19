@@ -52,10 +52,13 @@ nav #mobilehamburger {
     visibility: hidden;
     display: block;
     position: fixed;
+    transform: translate(-50px);
+    opacity: 0;
     left: 0;
     top: 0;
     min-width: 0;
     background-color: #070707;
+    transition: visibility 0s linear 0.2s, transform 0.2s, opacity 0.1s;
     height: 100vh;
   }
   nav ul.responsivemenu li > a:not(.centerhelper) {
@@ -63,5 +66,8 @@ nav #mobilehamburger {
   }
   nav ul.visible {
     visibility: visible;
+    transition: transform 0.2s, opacity 0.1s;
+    opacity: 1;
+    transform: none;
   }
 }
