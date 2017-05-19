@@ -9,19 +9,11 @@ html
   body
     #app
       nav
-        #hamburger.vcentercontainer(@click="show.mobilenav=!show.mobilenav")
-          .flex
-            a.centerhelper a
-            a(href="#")
-            img(src="/images/hamburger.svg")
+        nav-hamburger(@togglenav="show.mobilenav=!show.mobilenav")
         .logo.vcentercontainer
           h1 Blockchain at UCSB
         ul.horizontal.responsivemenu(:class="{ visible: show.mobilenav }")
-          #hamburger.vcentercontainer(@click="show.mobilenav=!show.mobilenav")
-            .flex
-              a.centerhelper a
-              a(href="#")
-              img(src="/images/hamburger.svg")
+          nav-hamburger(@togglenav="show.mobilenav=!show.mobilenav")
           li
             a(href="#") About
           li
