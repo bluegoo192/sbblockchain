@@ -1,10 +1,13 @@
+@import colors
+
 nav
   width: 100%
   display: flex
   position: fixed;
   justify-content: space-between
   align-items: stretch;
-  background-color: #ccc
+  background-color: theme-color;
+  color: white-color;
 
   #hamburger
     display: none
@@ -24,6 +27,7 @@ nav
       a
         display: block
         text-align: center
+        color: inherit;
         padding: 16px 0px
 
   .centerhelper

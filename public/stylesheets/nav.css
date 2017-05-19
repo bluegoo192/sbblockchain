@@ -4,7 +4,8 @@ nav {
   position: fixed;
   justify-content: space-between;
   align-items: stretch;
-  background-color: #ccc;
+  background-color: #3db5e7;
+  color: #eeece6;
 }
 nav #hamburger {
   display: none;
@@ -24,6 +25,7 @@ nav ul li {
 nav ul li a {
   display: block;
   text-align: center;
+  color: inherit;
   padding: 16px 0px;
 }
 nav .centerhelper {
