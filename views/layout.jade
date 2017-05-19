@@ -9,15 +9,17 @@ html
   body
     #app
       nav
-        #hamburger(@click="show.mobilenav=!show.mobilenav")
-          a(href="#") &#9776;
+        #hamburger.vcentercontainer(@click="show.mobilenav=!show.mobilenav")
+          a(href="#")
+            img(src="/images/hamburger.svg")
         a#centerhelper a
         .logo.vcentercontainer
           h1 Blockchain at UCSB
         ul.horizontal.responsivemenu(:class="{ visible: show.mobilenav }")
           li#mobilehamburger
             #hamburger(@click="show.mobilenav=!show.mobilenav")
-              a(href="#") &#9776;
+              a(href="#")
+                img(src="/images/hamburger.svg")
           li
             a(href="#") About
           li
