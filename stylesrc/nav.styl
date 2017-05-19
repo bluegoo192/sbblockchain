@@ -26,9 +26,10 @@ nav
         text-align: center
         padding: 16px 0px
 
-  #centerhelper
+  .centerhelper
     display: none
     visibility: hidden;
+    text-align: center;
     padding: 16px 0px;
 
   #mobilehamburger
@@ -44,9 +45,9 @@ nav
         display: block;
 
     #mobilehamburger
-      display: block;
+      display: flex;
 
-    #centerhelper
+    .centerhelper
       display: block;
 
     ul.responsivemenu
@@ -60,7 +61,7 @@ nav
       color: #fff;
       height: 100vh;
 
-      li a
+      li > a:not(.centerhelper)
         padding: 8px 8px
 
     ul.visible
