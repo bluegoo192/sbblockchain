@@ -1,6 +1,13 @@
 a {
   text-decoration: none;
 }
+button.cta {
+  background-color: #e37c1d;
+  color: #eeece6;
+  border: none;
+  padding: 12px;
+  font-size: 1.1em;
+}
 #hero {
   height: 75vh;
 }
