@@ -16,6 +16,9 @@ a {
 h1 {
   margin: 0;
 }
+button {
+  cursor: pointer;
+}
 ul li {
   list-style: none;
 }

@@ -28,6 +28,9 @@ nav ul li a {
   color: inherit;
   padding: 16px 0px;
 }
+nav ul li:hover {
+  background-color: #0592cf;
+}
 nav .centerhelper {
   display: none;
   visibility: hidden;
