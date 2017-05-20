@@ -8,6 +8,9 @@ button.cta {
   padding: 12px;
   font-size: 1.1em;
 }
+button.cta:hover {
+  background-color: #b45d0d;
+}
 #hero {
   height: 75vh;
 }
