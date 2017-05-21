@@ -7,6 +7,9 @@ nav {
   background-color: #3db5e7;
   color: #eeece6;
 }
+nav h1 {
+  font-size: 1.3em;
+}
 nav #hamburger {
   display: none;
 }
@@ -37,7 +40,7 @@ nav .centerhelper {
   text-align: center;
   padding: 16px 0px;
 }
-@media (max-width: 40em) {
+@media (max-width: 44em) {
   nav #hamburger {
     display: flex;
     padding: 0px 8px;
@@ -63,7 +66,7 @@ nav .centerhelper {
     height: 100vh;
   }
   nav ul.responsivemenu li > a:not(.centerhelper) {
-    padding: 8px 8px;
+    padding: 8px 16px;
   }
   nav ul.visible {
     visibility: visible;

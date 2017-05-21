@@ -2,7 +2,10 @@ extends layout
 
 block content
   #hero.vcentercontainer
-    h1 slogan or something
+    h1 
+      | build 
+      span.themecolor#buzzword {{ currentBuzzword }} 
+      | tech
     button.cta Get Involved
   .maincontainer
     .stack.center

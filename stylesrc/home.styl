@@ -15,3 +15,23 @@ button.cta:hover
 
 #hero
   height: 75vh
+  background-color: #ccc
+
+h1
+  font-size: 2em;
+
+#buzzword
+  animation-name: slideout
+  animation-duration: 2s
+  animation-iteration-count: infinite;
+
+@media (max-width: 35em)
+
+  h1
+    font-size: 1.5em;
+
+@keyframes slideout
+    0%   {transform: translateY(0px);}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
