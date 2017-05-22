@@ -67,7 +67,7 @@ nav .centerhelper {
     height: 100vh;
   }
   nav ul.responsivemenu li > a:not(.centerhelper) {
-    padding: 8px 16px;
+    padding: 16px 24px;
   }
   nav ul.visible {
     visibility: visible;

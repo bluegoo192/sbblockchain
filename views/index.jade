@@ -1,17 +1,21 @@
 extends layout
 
 block content
-  #hero.vcentercontainer.bottomdivider
+  #hero.vcentercontainer
     h1.bottomdivider
       | build 
       span.themecolor#buzzword {{ currentBuzzword }} 
       |  tech
     button.cta Get Involved
   .maincontainer
-    .stack.center.hpadded.msquare
+    #mainexpl.stack.hpadded.msquare.purewhite.cc
       h2.center Blockchain at UCSB
-      p We empower students to develop distributed systems through education, projects, and industry connections.
+      .divider5
+      p.center We empower students to develop distributed systems through education, projects, and industry connections.
     .divider5
+    .flexcontainer.horizontal.spaced
+      h2 What is blockchain?
+      p Blockchains are distributed digital ledgers used to create trust in decentralized systems
     .flexcontainer.horizontal
       .stack
         h3 Who we are
