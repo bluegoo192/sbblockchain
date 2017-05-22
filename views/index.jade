@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  #hero.vcentercontainer
-    h1 
+  #hero.vcentercontainer.bottomdivider
+    h1.bottomdivider
       | build 
       span.themecolor#buzzword {{ currentBuzzword }} 
       |  tech
     button.cta Get Involved
   .maincontainer
-    .stack.center
-      h2.center test
+    .stack.center.hpadded.msquare
+      h2.center Blockchain at UCSB
       p We empower students to develop distributed systems through education, projects, and industry connections.
+    .divider5
     .flexcontainer.horizontal
       .stack
         h3 Who we are

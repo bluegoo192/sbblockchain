@@ -29,6 +29,6 @@ var app = new Vue({
   mounted: function () {
     setInterval(function () {
       this.buzzwordCounter += 1
-    }.bind(this), 2000)
+    }.bind(this), 3000)
   }
 })
