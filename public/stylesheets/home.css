@@ -17,6 +17,7 @@ button.cta:hover {
 }
 h1 {
   font-size: 2em;
+  transition: width 0.5s;
 }
 #buzzword {
   animation-name: slideout;
@@ -30,42 +31,74 @@ h1 {
   }
 }
 @-moz-keyframes slideout {
+  0% {
+    transform: translate(0px, -70px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   90% {
     transform: translate(0px, 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 70px);
     opacity: 0;
   }
 }
 @-webkit-keyframes slideout {
+  0% {
+    transform: translate(0px, -70px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   90% {
     transform: translate(0px, 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 70px);
     opacity: 0;
   }
 }
 @-o-keyframes slideout {
+  0% {
+    transform: translate(0px, -70px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   90% {
     transform: translate(0px, 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 70px);
     opacity: 0;
   }
 }
 @keyframes slideout {
+  0% {
+    transform: translate(0px, -70px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   90% {
     transform: translate(0px, 0px);
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 70px);
     opacity: 0;
   }
 }
