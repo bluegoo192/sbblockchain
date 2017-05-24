@@ -72,6 +72,11 @@ button {
 .material {
   box-shadow: 0px 0px 8px #070707;
 }
+footer {
+  background-color: #070707;
+  color: #eeece6;
+  text-align: center;
+}
 @media (max-width: 35em) {
   .msquare {
     min-height: 100vw;
