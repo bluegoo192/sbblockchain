@@ -75,7 +75,6 @@ button {
 footer {
   background-color: #070707;
   color: #eeece6;
-  text-align: center;
 }
 @media (max-width: 35em) {
   .msquare {
