@@ -1,10 +1,13 @@
+nav:hover {
+  background-color: #3db5e7;
+}
 nav {
   width: 100%;
   display: flex;
   position: fixed;
   justify-content: space-between;
   align-items: stretch;
-  background-color: #3db5e7;
+  background-color: rgba(0,0,0,0);
   color: #eeece6;
   z-index: 10;
 }
