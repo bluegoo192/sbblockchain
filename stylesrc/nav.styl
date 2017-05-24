@@ -1,8 +1,5 @@
 @import colors
 
-nav:hover
-  background-color: theme-color;
-
 nav
   width: 100%
   display: flex
@@ -30,6 +27,7 @@ nav
 
     li
       flex-grow: 1
+      transition: background-color 0.1s
 
       a
         display: block
@@ -38,7 +36,8 @@ nav
         padding: 16px 0px
 
     li:hover
-      background-color: theme-dark;
+      background-color: white-color
+      color: theme-color
 
   .centerhelper
     display: none
