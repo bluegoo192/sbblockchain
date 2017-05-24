@@ -8,7 +8,7 @@ block content
       |  tech
     button.cta Get Involved
   .maincontainer
-    #mainexpl.stack.hpadded.msquare.purewhite.cc
+    #mainexpl.stack.hpadded.msquare.cc
       h2.center Blockchain at UCSB
       .divider5
       p.center We empower students to develop distributed systems through education, projects, and industry connections.
@@ -28,6 +28,30 @@ block content
 
 block scripts
   script(src="/javascripts/index.js")
-
+  script.
+    function getPosition(el) {
+      var xPos = 0;
+      var yPos = 0;
+      while (el) {
+        if (el.tagName == "BODY") {
+          // deal with browser quirks with body/window/document and page scroll
+          var xScroll = el.scrollLeft || document.documentElement.scrollLeft;
+          var yScroll = el.scrollTop || document.documentElement.scrollTop;
+          xPos += (el.offsetLeft - xScroll + el.clientLeft);
+          yPos += (el.offsetTop - yScroll + el.clientTop);
+        } else {
+          // for all other non-BODY elements
+          xPos += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+          yPos += (el.offsetTop - el.scrollTop + el.clientTop);
+        }
+        el = el.offsetParent;
+      }
+      return {
+        x: xPos,
+        y: yPos
+      };
+    }
+    window.addEventListener("scroll", app.trackPos, false);
+    window.addEventListener("resize", app.trackPos, false);
 block styles
   link(rel='stylesheet', href='/stylesheets/home.css')

@@ -2,6 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     buzzwordCounter: 0,
+    solidNav: false,
     buzzwords: [
       "distributed",
       "secure",
@@ -14,8 +15,12 @@ var app = new Vue({
     }
   },
   methods: {
-    test: function () {
-      console.log('hi');
+    trackPos: function() {
+      var el = document.querySelector("#mainexpl");
+      var pos = getPosition(el);
+      if (pos.y <= 0) { this.solidNav = true; }
+      else if (this.solidNav === true) { this.solidNav = false; }
+      console.log(this.solidNav)
     }
   },
   computed: {
@@ -30,5 +35,6 @@ var app = new Vue({
     setInterval(function () {
       this.buzzwordCounter += 1
     }.bind(this), 3000)
+    this.trackPos();
   }
 })

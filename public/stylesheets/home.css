@@ -31,6 +31,8 @@ h1 {
 }
 #mainexpl {
   padding: 5em 5em;
+  background-color: #3db5e7;
+  color: #eeece6;
 }
 @media (max-width: 35em) {
   h1 {
