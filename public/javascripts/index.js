@@ -20,7 +20,6 @@ var app = new Vue({
       var pos = getPosition(el);
       if (pos.y <= 0) { this.solidNav = true; }
       else if (this.solidNav === true) { this.solidNav = false; }
-      console.log(this.solidNav)
     }
   },
   computed: {
@@ -35,6 +34,5 @@ var app = new Vue({
     setInterval(function () {
       this.buzzwordCounter += 1
     }.bind(this), 3000)
-    this.trackPos();
   }
 })

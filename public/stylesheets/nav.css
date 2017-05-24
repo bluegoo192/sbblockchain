@@ -43,6 +43,9 @@ nav .centerhelper {
   text-align: center;
   padding: 16px 0px;
 }
+nav.solid {
+  background-color: #3db5e7;
+}
 @media (max-width: 44em) {
   nav #hamburger {
     display: flex;

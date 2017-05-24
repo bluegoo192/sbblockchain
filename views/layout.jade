@@ -9,7 +9,7 @@ html
     block styles
   body
     #app
-      nav
+      nav(:class="{ solid: solidNav }")
         nav-hamburger(@togglenav="show.mobilenav=!show.mobilenav")
         .logo.vcentercontainer
           h1 Blockchain UCSB
